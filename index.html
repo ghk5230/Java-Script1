@@ -1,0 +1,24 @@
+<html> 
+<body> 
+
+<p>Press play.</p>
+
+<video id="myVideo" width="320" height="176" controls>
+	<source src="COSTA RICA IN 4K 60fps HDR (ULTRA HD).mp4" type="video/mp4">
+  
+</video>
+
+<script>
+var vid = document.getElementById("myVideo");
+vid.onplay = function() {
+  alert("The video has started to play");
+};
+document.getElementById('myVideo').addEventListener('loadedmetadata', function() {
+  this.currentTime = 50;
+}, false);
+</script> 
+
+<p>Video courtesy of <a href="https://www.youtube.com/" target="_blank">youtube.</a></p>
+
+</body> 
+</html>
